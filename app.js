@@ -1,9 +1,12 @@
-var express = require('express'); // app server
+var express = require('express'); 
+var cors = require('cors');
 const bodyParser = require('body-parser');
 const AssistantV2 = require('ibm-watson/assistant/v2');
 const { IamAuthenticator } = require('ibm-watson/auth');
 
 const app = express();
+
+app.use(cors());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
