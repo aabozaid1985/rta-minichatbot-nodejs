@@ -1,0 +1,12 @@
+{
+    "name": "rta-minichatbot-nodejs",
+    "description": "rta-minichatbot-nodejs",
+    "authors": "AbuZaid",
+    "version": "1.0.0",
+    "main": "pathToMain",
+    "dependencies": {
+        "express": "^4.17.1",
+        "ibm-watson": "^6.1.1",
+        "body-parser": "^1.19.0"
+    }
+}
