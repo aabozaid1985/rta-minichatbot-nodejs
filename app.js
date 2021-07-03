@@ -31,7 +31,7 @@ app.post('/api/session', function(req, res) {
     }).then(sessionResponse => {
         res.json(sessionResponse);
     }).catch(err => {
-        console.log(err);
+        res.status(500).send(err);
     });
 });
 
